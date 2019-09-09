@@ -6,17 +6,594 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/3b20cce05a.js"></script>
+
+    <!--Fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,500,700,900&display=swap&subset=cyrillic"
+          rel="stylesheet">
+
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+
 
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>Hello, world!</h1>
+
+
+<header>
+    <div class="container-fluid header_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown mr-lg-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="tel_dropDowm" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            +38 (095) 395 07 47
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tel_dropDowm">
+                            <a class="dropdown-item" href="#">+38 (095) 395 07 47</a>
+                            <a class="dropdown-item" href="#">+38 (095) 395 07 47 </a>
+                            <a class="dropdown-item" href="#">+38 (095) 395 07 47 </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            об академии
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDrop">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">курсы</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">контакты</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!-- /.container -->
+
+</header>
+<main>
+    <section class="banner" id="main_banner"
+             style="background-image: url('images/beautiful-cleaning-fashion-332046(1).png')">
+        <div class="container">
+            <div class="main_banner_content">
+                <div class="banner_main">
+                    <div class="content">
+                        <h1 class="title">
+                            Viola
+                            International
+                            Nail Academy
+                        </h1>
+                        <!-- /.title -->
+                        <p class="text">
+                            Тут может быть небольшое описание курсов. На пару строк, чтобы заинтересовать.
+                            А можно просто сделать крупнее надпись, вместо текста под ней.
+                        </p>
+                        <!-- /.text -->
+                    </div>
+                    <!-- /.title -->
+                </div>
+                <!-- /.banner_main -->
+                <div class="banner_bottom">
+                    <div class="banner_btn_wrap">
+                        <button type="button" class="btn viola_btn">ЗАПИСАТЬСЯ НА КУРСЫ</button>
+                        <!-- /.btn viola_btn -->
+                        <button type="button" class="btn viola_btn">ЗАПИСАТЬСЯ КАК МОДЕЛЬ</button>
+                        <!-- /.btn viola_btn -->
+                    </div>
+                    <!-- /.banner_btn_wrap -->
+                </div>
+                <!-- /.banner_bottom -->
+            </div>
+            <!-- /.main_banner_content -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#main_banner -->
+    <section id="main_about">
+        <div class="container section-container">
+            <div class="section-container_header">
+                <h2>
+                    Почему именно мы?
+                </h2>
+            </div>
+            <!-- /.section-container_header -->
+            <div class="section-container_body">
+                <div class="about_content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <ul class="nav nav-tabs about_tabs border-bottom-0" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                       aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                       aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile" role="tab"
+                                       aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab3" data-toggle="tab" href="#profile" role="tab"
+                                       aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab4" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab15" data-toggle="tab" href="#profile" role="tab"
+                                       aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab26" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab261" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-8">
+                            <div class="tab-content about_tab_content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                     aria-labelledby="home-tab">
+                                    <div class="single_tab">
+                                        <div class="tab_icon_wrap">
+                                            <img src="images/icons/icon_1.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <p>
+                                                Преподаватели УЦ - победители чемпионатов, имеют международные
+                                                сертификаты и проводят обучение по единым программам составленными и
+                                                одобренными международным инструктором Викторией Кисель.
+
+                                                <br>
+                                                <br>
+                                                Лидер-преподаватель Кисель Виктория - единственный в Харькове
+                                                сертифицированный судья международных чемпионатов OMC, INJA, а также
+                                                национальных чемпионатов СПУ.
+                                            </p>
+                                        </div>
+                                        <!-- /.content -->
+                                        <!-- /.tab_icon_wrap -->
+                                    </div>
+                                    <!-- /.single_tab -->
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    ...
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-lg-8 -->
+                    </div>
+                    <!-- /.row -->
+
+
+                </div>
+                <!-- /.about_content -->
+            </div>
+            <!-- /.section-container_body -->
+        </div>
+        <!-- /.container section-container -->
+    </section>
+    <!-- /#main_about -->
+    <section id="main_courses">
+        <div class="container section-container">
+            <div class="section-container_header">
+                <h2>Наши курсы</h2>
+            </div>
+            <!-- /.section-container_header -->
+            <div class="section-container_body">
+                <div class="viola_slider_wrap">
+                    <div class="viola_slider courses_slider owl-carousel owl-theme" id="main_courses_slider">
+                        <div class="courses_slider_item" style="background-image: url('images/hands.png')">
+                            <div class="label_wrap">
+                                <div class="label_item">БАЗОВЫЙ</div>
+                                <!-- /.label_item -->
+                                <div class="label_item">ПОПУЛЯРНО!</div>
+                                <!-- /.label_item -->
+                            </div>
+                            <!-- /.label_wrap -->
+                            <div class="data_wrap">
+                                <div class="slide_header">
+                                    <h5>«идеальный маникюр и педикюр»
+                                    </h5>
+                                </div>
+                                <div class="slide_body">
+                                    <ul>
+                                        <li>Длительность: 7 дней<li>
+                                        <li>Кол-во часов: 56 ч.</li>
+                                        <li>Продолжительность: 4 или
+                                            8 часов (на выбор)</li>
+                                    </ul>
+                                </div>
+                                <div class="slide_link">
+                                    <a href="#" class="btn viola_btn">
+                                        подробнее
+                                    </a>
+                                    <!-- /.btn viola_btn -->
+                                </div>
+                                <!-- /.slide_link -->
+                            </div>
+                            <!-- /.data_wrap -->
+                        </div>
+                        <div class="courses_slider_item" style="background-image: url('images/hands.png')">
+                            <div class="label_wrap">
+                                <div class="label_item">БАЗОВЫЙ</div>
+                                <!-- /.label_item -->
+                                <div class="label_item">ПОПУЛЯРНО!</div>
+                                <!-- /.label_item -->
+                            </div>
+                            <!-- /.label_wrap -->
+                            <div class="data_wrap">
+                                <div class="slide_header">
+                                    <h5>«идеальный маникюр и педикюр»
+                                    </h5>
+                                </div>
+                                <div class="slide_body">
+                                    <ul>
+                                        <li>Длительность: 7 дней<li>
+                                        <li>Кол-во часов: 56 ч.</li>
+                                        <li>Продолжительность: 4 или
+                                            8 часов (на выбор)</li>
+                                    </ul>
+                                </div>
+                                <div class="slide_link">
+                                    <a href="#" class="btn viola_btn">
+                                        подробнее
+                                    </a>
+                                    <!-- /.btn viola_btn -->
+                                </div>
+                                <!-- /.slide_link -->
+                            </div>
+                            <!-- /.data_wrap -->
+                        </div>
+                        <div class="courses_slider_item" style="background-image: url('images/hands.png')">
+                            <div class="label_wrap">
+                                <div class="label_item">БАЗОВЫЙ</div>
+                                <!-- /.label_item -->
+                                <div class="label_item">ПОПУЛЯРНО!</div>
+                                <!-- /.label_item -->
+                            </div>
+                            <!-- /.label_wrap -->
+                            <div class="data_wrap">
+                                <div class="slide_header">
+                                    <h5>«идеальный маникюр и педикюр»
+                                    </h5>
+                                </div>
+                                <div class="slide_body">
+                                    <ul>
+                                        <li>Длительность: 7 дней<li>
+                                        <li>Кол-во часов: 56 ч.</li>
+                                        <li>Продолжительность: 4 или
+                                            8 часов (на выбор)</li>
+                                    </ul>
+                                </div>
+                                <div class="slide_link">
+                                    <a href="#" class="btn viola_btn">
+                                        подробнее
+                                    </a>
+                                    <!-- /.btn viola_btn -->
+                                </div>
+                                <!-- /.slide_link -->
+                            </div>
+                            <!-- /.data_wrap -->
+                        </div>
+                        <div class="courses_slider_item" style="background-image: url('images/hands.png')">
+                            <div class="label_wrap">
+                                <div class="label_item">БАЗОВЫЙ</div>
+                                <!-- /.label_item -->
+                                <div class="label_item">ПОПУЛЯРНО!</div>
+                                <!-- /.label_item -->
+                            </div>
+                            <!-- /.label_wrap -->
+                            <div class="data_wrap">
+                                <div class="slide_header">
+                                    <h5>«идеальный маникюр и педикюр»
+                                    </h5>
+                                </div>
+                                <div class="slide_body">
+                                    <ul>
+                                        <li>Длительность: 7 дней<li>
+                                        <li>Кол-во часов: 56 ч.</li>
+                                        <li>Продолжительность: 4 или
+                                            8 часов (на выбор)</li>
+                                    </ul>
+                                </div>
+                                <div class="slide_link">
+                                    <a href="#" class="btn viola_btn">
+                                        подробнее
+                                    </a>
+                                    <!-- /.btn viola_btn -->
+                                </div>
+                                <!-- /.slide_link -->
+                            </div>
+                            <!-- /.data_wrap -->
+                        </div>
+                        <div class="courses_slider_item" style="background-image: url('images/hands.png')">
+                            <div class="label_wrap">
+                                <div class="label_item">БАЗОВЫЙ</div>
+                                <!-- /.label_item -->
+                                <div class="label_item">ПОПУЛЯРНО!</div>
+                                <!-- /.label_item -->
+                            </div>
+                            <!-- /.label_wrap -->
+                            <div class="data_wrap">
+                                <div class="slide_header">
+                                    <h5>«идеальный маникюр и педикюр»
+                                    </h5>
+                                </div>
+                                <div class="slide_body">
+                                    <ul>
+                                        <li>Длительность: 7 дней<li>
+                                        <li>Кол-во часов: 56 ч.</li>
+                                        <li>Продолжительность: 4 или
+                                            8 часов (на выбор)</li>
+                                    </ul>
+                                </div>
+                                <div class="slide_link">
+                                    <a href="#" class="btn viola_btn">
+                                        подробнее
+                                    </a>
+                                    <!-- /.btn viola_btn -->
+                                </div>
+                                <!-- /.slide_link -->
+                            </div>
+                            <!-- /.data_wrap -->
+                        </div>
+                        <!-- /.courses_slider_item -->
+
+                    </div>
+                    <!-- /#main_courses_slider.viola_slider -->
+                </div>
+                <!-- /.viol_slider_wrap -->
+                <div class="link_wrap d-flex justify-content-center mt-lg-5">
+                    <a href="#" class="btn viola_btn">Все курсы</a>
+                    <!-- /.btn viola_btn -->
+                </div>
+                <!-- /.link_wrap d-flex justify-content-center -->
+            </div>
+            <!-- /.section-container_body -->
+        </div>
+        <!-- /.container section-container -->
+    </section>
+    <!-- /#main_courses -->
+    <section id="features">
+        <div class="container section-container">
+            <div class="section-container_header">
+                <h2>Приятные особенности</h2>
+            </div>
+            <!-- /.section-container_header -->
+            <div class="section-container_body">
+                <div class="row features justify-content-lg-center">
+                    <div class="feature_wrap col-lg-4">
+                        <div class="feature_item">
+                            <div class="img_wrap">
+                                <img src="images/feaure.png" alt="">
+                            </div>
+                            <!-- /.img_wrap -->
+                            <div class="feature_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                            <!-- /.feature_text -->
+                        </div>
+                        <!-- /.feature_item -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="feature_wrap col-lg-4">
+                        <div class="feature_item">
+                            <div class="img_wrap">
+                                <img src="images/feaure.png" alt="">
+                            </div>
+                            <!-- /.img_wrap -->
+                            <div class="feature_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                            <!-- /.feature_text -->
+                        </div>
+                        <!-- /.feature_item -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="feature_wrap col-lg-4">
+                        <div class="feature_item">
+                            <div class="img_wrap">
+                                <img src="images/feaure.png" alt="">
+                            </div>
+                            <!-- /.img_wrap -->
+                            <div class="feature_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                            <!-- /.feature_text -->
+                        </div>
+                        <!-- /.feature_item -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="feature_wrap col-lg-4">
+                        <div class="feature_item">
+                            <div class="img_wrap">
+                                <img src="images/feaure.png" alt="">
+                            </div>
+                            <!-- /.img_wrap -->
+                            <div class="feature_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                            <!-- /.feature_text -->
+                        </div>
+                        <!-- /.feature_item -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="feature_wrap col-lg-4">
+                        <div class="feature_item">
+                            <div class="img_wrap">
+                                <img src="images/feaure.png" alt="">
+                            </div>
+                            <!-- /.img_wrap -->
+                            <div class="feature_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                            <!-- /.feature_text -->
+                        </div>
+                        <!-- /.feature_item -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.features -->
+            </div>
+            <!-- /.section-container_body -->
+        </div>
+        <!-- /.container section-container -->
+    </section>
+    <!-- /#features -->
+    <section id="perspectives">
+        <div class="container section-container">
+            <div class="section-container_header">
+                <h2>
+                    Ваши перспективы
+                </h2>
+            </div>
+            <!-- /.section-container_header -->
+            <div class="section-container_body">
+                <div class="perspectives">
+                    <div class="perspective_item">
+                        <h5 class="title">новая профессия</h5>
+                        <!-- /.title -->
+                        <div class="img_wrap">
+                            <img src="images/icons/badge.png" alt="">
+                        </div>
+                        <!-- /.img_wrap -->
+                        <div class="text">
+                            Получите новую денежную профессию, кардинально измените свою жизнь и научитесь зарабатывать всегда и везде!
+                        </div>
+                        <!-- /.text -->
+                    </div>
+                    <!-- /.perspective_item -->
+                    <div class="perspective_item">
+                        <h5 class="title">новая профессия</h5>
+                        <!-- /.title -->
+                        <div class="img_wrap">
+                            <img src="images/icons/badge.png" alt="">
+                        </div>
+                        <!-- /.img_wrap -->
+                        <div class="text">
+                            Получите новую денежную профессию, кардинально измените свою жизнь и научитесь зарабатывать всегда и везде!
+                        </div>
+                        <!-- /.text -->
+                    </div>
+                    <!-- /.perspective_item -->
+                    <div class="perspective_item">
+                        <h5 class="title">новая профессия</h5>
+                        <!-- /.title -->
+                        <div class="img_wrap">
+                            <img src="images/icons/badge.png" alt="">
+                        </div>
+                        <!-- /.img_wrap -->
+                        <div class="text">
+                            Получите новую денежную профессию, кардинально измените свою жизнь и научитесь зарабатывать всегда и везде!
+                        </div>
+                        <!-- /.text -->
+                    </div>
+                    <!-- /.perspective_item -->
+                    <div class="perspective_item">
+                        <h5 class="title">новая профессия</h5>
+                        <!-- /.title -->
+                        <div class="img_wrap">
+                            <img src="images/icons/badge.png" alt="">
+                        </div>
+                        <!-- /.img_wrap -->
+                        <div class="text">
+                            Получите новую денежную профессию, кардинально измените свою жизнь и научитесь зарабатывать всегда и везде!
+                        </div>
+                        <!-- /.text -->
+                    </div>
+                    <!-- /.perspective_item -->
+                </div>
+                <!-- /.perspectives -->
+                <div class="link_wrap d-flex justify-content-center mt-lg-5">
+                    <button href="#" class="btn viola_btn">ЗАПИСАТЬСЯ</button>
+                    <!-- /.btn viola_btn -->
+                </div>
+            </div>
+            <!-- /.section-container_body -->
+        </div>
+        <!-- /.container section-container -->
+    </section>
+    <!-- /#perspectives -->
+</main>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="script/owl.carousel.min.js"></script>
+<!--<script src="script/owl.carousel.js"></script>-->
+
+<script>
+    $(document).ready(function () {
+        $(".courses_slider").owlCarousel({
+            nav: true,
+            navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']
+        });
+    });
+</script>
+
 </body>
 </html>
