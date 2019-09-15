@@ -10,6 +10,24 @@ $(document).ready(function () {
         autoplay: true,
         loop: true,
         smartSpeed: 800,
+        slideTransition: 'linear',
+
+
+    });
+    $("#main_banner").owlCarousel({
+        nav: false,
+
+        items: 1,
+        autoplay: true,
+        loop: true,
+        pullDrag: false,
+        touchDrag: false,
+        mouseDrag: false,
+        smartSpeed: 800,
+        autoplaySpeed: 5000,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut'
+
     });
 
 
