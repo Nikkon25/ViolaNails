@@ -11,7 +11,7 @@ body {
   background: $bg_violet;
   background: linear-gradient(-214deg, #f1e8eb 0%, #f1e8eb 1%, #f1e6ea 27%, #f1e2e7 42%, #f1e2e7 52%, #f1cdda 99%);
   position: relative;
-
+  overflow-x: hidden;
 }
 
 h1 {
@@ -182,6 +182,8 @@ p, a, li {
   margin-top: 124px;
 
   .feature_wrap {
+    display: flex;
+    justify-content: center;
     .feature_item {
       position: relative;
       height: 270px;
@@ -371,7 +373,7 @@ p, a, li {
   }
   .reviews_slider{
     &_item{
-      max-width: 1000px;
+      max-width: 940px;
       .review_photo{
         .img_wrap{
           img{
@@ -403,6 +405,7 @@ header {
   top: 0;
   z-index: 1000;
 
+
   .header_container {
     padding: 0;
 
@@ -412,7 +415,7 @@ header {
       background-color: $bg_violet;
 
       ul {
-        margin-left: 120px;
+        //margin-left: 120px;
         width: 100%;
 
         li {
@@ -431,13 +434,23 @@ header {
 section#main_banner {
   .banner_item{
     width: 100%;
-
+    height: calc(100vh - 72px);
+    background-repeat: no-repeat;
+    background-size: cover;background-position: center;
+    .container{
+      height: 100%;
+    }
   }
   .main_banner_content {
     padding: 6rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .banner_main {
-      margin-bottom: 125px;
+      flex: 1 1 auto;
+
 
       .content {
         width: 493px;
@@ -460,7 +473,6 @@ section#main_banner {
         }
       }
     }
-
     .banner_bottom {
       .banner_btn_wrap {
         display: flex;
@@ -573,7 +585,7 @@ footer{
 
   padding: 64px 0;
   .container{
-    .footer_nav{
+    ul,.footer_nav{
 
       list-style-type: none;
       padding-left: 0;
@@ -617,11 +629,14 @@ footer{
     .footer_logo_wrap{
       display: flex;
       flex-direction: column;
-      height: 100%;
+      justify-content: space-between;
       .footer_logo{
-        flex: 1 1 auto;
+
         display: flex;
-        align-items: center;
+        margin-bottom: 48px;
+        img{
+          width: 100%;
+        }
       }
       .social_wrap{
         margin-bottom: 24px;

@@ -1,0 +1,75 @@
+@import "colors";
+
+
+@media screen and (max-width: 1440px) {
+  header {
+
+    .header_container {
+      .navbar {
+        padding: 0.15rem 48px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  header .header_container .navbar {
+    padding: 0.15rem 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .header_container .navbar {
+    padding: 0.15rem 8px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+  section#main_banner .main_banner_content {
+    padding: 4rem 0;
+  }
+  section#main_about {
+    .about_content {
+      .about_tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+      }
+
+    }
+  }
+  .viola_slider_wrap .reviews_slider_item {
+    max-width: 840px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  section#main_banner .main_banner_content .banner_bottom .banner_btn_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .btn {
+      margin-bottom: 24px;
+      //width: 100%;
+    }
+  }
+  .features .feature_wrap {
+    .feature_item {
+      margin-bottom: 92px;
+    }
+  }
+  .viola_slider_wrap .reviews_slider_item {
+    max-width: 640px;
+  }
+  .section-container{
+    padding: 2.5rem 0 0 1.25rem;
+  }
+  .navbar-collapse{
+    ul{
+      padding: 1.5rem .75rem;
+    }
+  }
+
+}

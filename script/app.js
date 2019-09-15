@@ -1,7 +1,22 @@
 $(document).ready(function () {
     $("#main_courses_slider").owlCarousel({
         nav: true,
-        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']
+        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+
+            },
+            600: {
+                items: 2,
+                nav: true
+            },
+            1040: {
+                items: 3
+            }
+        },
     });
     $("#main_reviews_slider").owlCarousel({
         nav: true,
@@ -18,7 +33,7 @@ $(document).ready(function () {
         nav: false,
 
         items: 1,
-        autoplay: true,
+        // autoplay: true,
         loop: true,
         pullDrag: false,
         touchDrag: false,
