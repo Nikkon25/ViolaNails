@@ -5,11 +5,15 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                nav: false,
+                nav: 0,
                 dots: true
 
             },
-            600: {
+            321: {
+                nav: 1,
+                items: 1
+            },
+            768: {
                 items: 2,
                 nav: true
             },
@@ -22,10 +26,22 @@ $(document).ready(function () {
         nav: true,
         navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
         items: 1,
-        autoplay: true,
+        autoplay: 0,
         loop: true,
         smartSpeed: 800,
         slideTransition: 'linear',
+        responsive: {
+            0: {
+                items: 1,
+                nav: 0,
+                dots: true
+
+            },
+            768: {
+                items: 1,
+                nav: true
+            }
+        },
 
 
     });
