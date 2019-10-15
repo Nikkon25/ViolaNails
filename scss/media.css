@@ -1,3 +1,8 @@
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1440px;
+  }
+}
 @media screen and (max-width: 1440px) {
   header .header_container .navbar {
     padding: 0.15rem 48px;
@@ -6,6 +11,15 @@
 @media screen and (max-width: 1366px) {
   header .header_container .navbar {
     padding: 0.15rem 48px;
+  }
+
+  .simple_banner .simple_banner_content {
+    padding: 75px 0 35px 20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .simple_banner .simple_banner_content {
+    padding: 75px 0 35px 5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -37,6 +51,21 @@
   .viola_slider_wrap .reviews_slider_item {
     max-width: 840px;
   }
+
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 34px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
 }
 @media screen and (max-width: 826px) {
   section#main_banner .main_banner_content .banner_bottom .banner_btn_wrap {
@@ -59,11 +88,20 @@
   }
 
   .section-container {
-    padding: 2.5rem 0 1.25rem 0;
+    padding: 2.5rem 1rem 1.25rem;
   }
 
   .navbar-collapse ul {
     padding: 1.5rem .75rem;
+  }
+
+  .course_features_wrap .feature-item .feature_img {
+    display: none;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 28px;
+    line-height: calc(28px * 1.5);
   }
 }
 @media screen and (max-width: 767px) {
@@ -90,6 +128,12 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    min-height: calc(100vh - 82px);
+    height: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -170,6 +214,60 @@
   footer .container ul li p a, footer .container .footer_nav li p a {
     font-size: 16px;
   }
+
+  .section-container_header h2 {
+    font-size: 2rem;
+  }
+
+  .about_course .text-wrap p {
+    font-size: 1.15rem;
+  }
+
+  .data_items_wrap .data_item_value .val {
+    font-size: 38px;
+  }
+
+  .data_items_wrap .data_item_value {
+    height: 200px;
+    width: 200px;
+  }
+
+  .data_items_wrap .data_item_value .unit {
+    font-size: 20px;
+  }
+
+  .data_items_wrap .data_item_text p {
+    font-size: 20px;
+  }
+
+  .course_program_wrap .program_title h3 {
+    font-size: 22px;
+  }
+
+  .course_program_wrap .program-body .program-body-item .text {
+    font-size: 16px;
+  }
+
+  .course_features_wrap .feature-item .feature_text p {
+    font-size: 18px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 28px;
+    line-height: calc(28px * 1.5);
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text::after {
+    display: none;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    color: white;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    color: white;
+  }
 }
 @media screen and (max-width: 475px) {
   section#main_banner .main_banner_content .banner_main .content {
@@ -205,6 +303,22 @@
   .viola_btn {
     font-size: 14px;
     padding: 16px;
+  }
+
+  .course_program_wrap .program-body .program-body-item .text {
+    font-size: 14px;
+  }
+
+  .course_features_wrap .feature-item .feature_text p {
+    font-size: 16px;
+  }
+
+  .course_features_wrap .feature-item .feature_check {
+    margin-right: 24px;
+  }
+  .course_features_wrap .feature-item .feature_check img {
+    width: 48px;
+    height: 48px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -249,6 +363,17 @@
   .viola_slider_wrap .reviews_slider_item .review_content p.content {
     font-size: 1rem;
   }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 18px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title::after {
+    margin-top: 8px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 375px) {
   section#main_banner .main_banner_content {
@@ -279,6 +404,30 @@
 
   footer .container ul li p a, footer .container .footer_nav li p a {
     font-size: 14px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 22px;
+  }
+
+  .simple_banner .simple_banner_content {
+    padding: 45px 0 35px 5%;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 18px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title::after {
+    margin-top: 8px;
+  }
+
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 14px;
+  }
+
+  .section-container_header h2 {
+    font-size: 1.75rem;
+    line-height: calc(1.75rem * 1.5);
   }
 }
 @media screen and (max-width: 320px) {

@@ -1,5 +1,10 @@
 @import "colors";
 
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1440px;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   header {
@@ -16,7 +21,18 @@
   header .header_container .navbar {
     padding: 0.15rem 48px;
   }
+  .simple_banner .simple_banner_content {
+    padding: 75px 0 35px 20%;
+  }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .simple_banner .simple_banner_content {
+    padding: 75px 0 35px 5%;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   header .header_container .navbar {
@@ -42,7 +58,18 @@
   .viola_slider_wrap .reviews_slider_item {
     max-width: 840px;
   }
-
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 34px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
 }
 
 @media screen and (max-width: 826px) {
@@ -64,14 +91,20 @@
     max-width: 640px;
   }
   .section-container {
-    padding: 2.5rem 0 1.25rem 0;
+    padding: 2.5rem 1rem 1.25rem;
   }
   .navbar-collapse {
     ul {
       padding: 1.5rem .75rem;
     }
   }
-
+  .course_features_wrap .feature-item .feature_img {
+    display: none;
+  }
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 28px;
+    line-height: calc(28px * 1.5);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -79,6 +112,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
 
   section#main_about {
     .about_content {
@@ -110,10 +144,14 @@
 }
 
 @media screen and (max-width: 576px) {
-
+  .banner{
+    min-height: calc(100vh - 82px);
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
+
   .features .feature_wrap .feature_item {
     height: 275px;
     width: 275px;
@@ -151,7 +189,7 @@
       }
     }
   }
-  .viola_slider_wrap .reviews_slider_item .review_content{
+  .viola_slider_wrap .reviews_slider_item .review_content {
     padding: 32px 16px 16px;
   }
   footer .container .footer_logo_wrap {
@@ -160,50 +198,100 @@
       justify-content: center;
     }
   }
-  footer{
+  footer {
     padding-bottom: 16px;
   }
-  footer .container .footer_logo_wrap .social_wrap{
+  footer .container .footer_logo_wrap .social_wrap {
     padding-left: 36px;
   }
-  footer .container ul li, footer .container .footer_nav li{
+  footer .container ul li, footer .container .footer_nav li {
     display: flex;
     justify-content: center;
-    .icon{
+
+    .icon {
       position: initial;
       margin-right: 14px;
     }
-    p{
+
+    p {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      a{
+
+      a {
         font-size: 16px;
       }
+
       margin-bottom: 0;
     }
+  }
+  .section-container_header h2 {
+    font-size: 2rem;
+  }
+  .about_course .text-wrap p {
+    font-size: 1.15rem;
+  }
+  .data_items_wrap .data_item_value .val {
+    font-size: 38px;
+  }
+  .data_items_wrap .data_item_value {
+    height: 200px;
+    width: 200px;
+  }
+  .data_items_wrap .data_item_value .unit {
+    font-size: 20px;
+  }
+  .data_items_wrap .data_item_text p {
+    font-size: 20px;
+  }
+  .course_program_wrap .program_title h3 {
+    font-size: 22px;
+  }
+  .course_program_wrap .program-body .program-body-item .text {
+    font-size: 16px;
+  }
+  .course_features_wrap .feature-item .feature_text p {
+    font-size: 18px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 28px;
+    line-height: calc(28px * 1.5);
+  }
+  .simple_banner .simple_banner_content .simple_banner_text{
+    &::after{
+      display: none;
+    }
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title{
+    color: white;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li{
+    color: white;
   }
 }
 
 @media screen and (max-width: 475px) {
-  section#main_banner .main_banner_content .banner_main .content{
+  section#main_banner .main_banner_content .banner_main .content {
     background-color: transparent;
     padding: 36px;
     border-radius: 0;
     width: auto;
     height: auto;
   }
-  section#main_banner{
+  section#main_banner {
     position: relative;
-    .banner_item{
-      .container{
+
+    .banner_item {
+      .container {
         position: relative;
         z-index: 1000;
-        .banner_bottom{
+
+        .banner_bottom {
           padding: 0 36px;
         }
       }
-      &::after{
+
+      &::after {
         display: block;
         position: absolute;
         top: 0;
@@ -216,20 +304,34 @@
       }
     }
   }
-  .viola_btn{
+  .viola_btn {
     font-size: 14px;
     padding: 16px;
+  }
+  .course_program_wrap .program-body .program-body-item .text {
+    font-size: 14px;
+  }
+  .course_features_wrap .feature-item .feature_text p {
+    font-size: 16px;
+  }
+  .course_features_wrap .feature-item .feature_check {
+    margin-right: 24px;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
 
 @media screen and (max-width: 414px) {
-  section#main_banner .main_banner_content .banner_main .content{
+  section#main_banner .main_banner_content .banner_main .content {
     padding: 16px;
   }
-  section#main_banner .banner_item .container .banner_bottom{
+  section#main_banner .banner_item .container .banner_bottom {
     padding: 0 16px;
   }
-  section#main_banner .owl-dots{
+  section#main_banner .owl-dots {
     flex-direction: row;
     top: auto;
     bottom: -8px;
@@ -248,34 +350,45 @@
       }
     }
   }
-  section#main_about .about_content .about_tabs li.nav-item a{
+  section#main_about .about_content .about_tabs li.nav-item a {
     font-size: 1rem;
   }
-  .perspectives .perspective_item .text{
+  .perspectives .perspective_item .text {
     font-size: 1rem;
     padding: 0 14px;
   }
-  .viola_slider_wrap .reviews_slider_item .review_content p.content{
+  .viola_slider_wrap .reviews_slider_item .review_content p.content {
     font-size: 1rem;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 18px;
+
+    &::after {
+      margin-top: 8px;
+    }
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  section#main_banner .main_banner_content{
+  section#main_banner .main_banner_content {
     padding: 2rem 0;
   }
-  section#main_banner .main_banner_content .banner_main .content .title{
+  section#main_banner .main_banner_content .banner_main .content .title {
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
-  section#main_banner .main_banner_content{
-    .banner_bottom{
-      .viola_btn{
+  section#main_banner .main_banner_content {
+    .banner_bottom {
+      .viola_btn {
         font-size: 13px;
         line-height: 19px;
         padding: 12px 34px;
       }
-      .viola_btn:last-child{
+
+      .viola_btn:last-child {
         margin-bottom: 36px;
       }
     }
@@ -283,29 +396,51 @@
   .features .feature_wrap .feature_item {
     height: 245px;
     width: 245px;
-    .feature_text{
+
+    .feature_text {
       font-size: 1rem;
     }
   }
-  footer .container ul li p a, footer .container .footer_nav li p a{
+  footer .container ul li p a, footer .container .footer_nav li p a {
     font-size: 14px;
+  }
+  .simple_banner .simple_banner_content .simple_banner_header {
+    font-size: 22px;
+  }
+  .simple_banner .simple_banner_content {
+    padding: 45px 0 35px 5%;
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_title {
+    font-size: 18px;
+
+    &::after {
+      margin-top: 8px;
+    }
+  }
+  .simple_banner .simple_banner_content .simple_banner_text .text_list li {
+    font-size: 14px;
+  }
+  .section-container_header h2 {
+    font-size: 1.75rem;
+    line-height: calc(1.75rem * 1.5);
   }
 }
 
 @media screen and (max-width: 320px) {
-  section#main_banner .banner_item,.banner{
+  section#main_banner .banner_item, .banner {
     height: 100%;
   }
-  h5{
+  h5 {
     font-size: 1.15rem;
   }
 
 }
+
 @media screen and (max-width: 826px) and (orientation: landscape) {
-  section#main_banner .banner_item,.banner{
+  section#main_banner .banner_item, .banner {
     height: 100%;
   }
-  section#main_banner .main_banner_content .banner_bottom .banner_btn_wrap{
+  section#main_banner .main_banner_content .banner_bottom .banner_btn_wrap {
     margin-top: 24px;
   }
 }

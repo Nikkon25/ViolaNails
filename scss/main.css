@@ -585,6 +585,324 @@ section#main_about .about_content .about_tab_content .tab-pane .single_tab .cont
   color: #000000;
 }
 
+.simple_banner {
+  position: relative;
+  background-size: cover;
+}
+.simple_banner::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(130, 95, 133, 0.35);
+}
+.simple_banner .simple_banner_content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 145px 0 75px 20%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: hidden;
+}
+.simple_banner .simple_banner_content .simple_banner_header {
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  color: white;
+}
+.simple_banner .simple_banner_content .simple_banner_text {
+  max-width: 572px;
+  position: relative;
+}
+.simple_banner .simple_banner_content .simple_banner_text::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -92px;
+  left: -184px;
+  height: 800px;
+  width: 800px;
+  background-color: rgba(241, 230, 234, 0.4);
+  border-radius: 50%;
+}
+.simple_banner .simple_banner_content .simple_banner_text .text_title {
+  font-size: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 45px;
+  z-index: 100;
+  position: relative;
+}
+.simple_banner .simple_banner_content .simple_banner_text .text_title::after {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 466px;
+  height: 3px;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 21px;
+}
+.simple_banner .simple_banner_content .simple_banner_text .text_list {
+  z-index: 1000;
+  padding-left: 20px;
+  position: relative;
+}
+.simple_banner .simple_banner_content .simple_banner_text .text_list li {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  color: #111111;
+  margin-bottom: 24px;
+  list-style-image: url("../images/icons/dot.svg");
+}
+
+.about_course .text-wrap {
+  margin-bottom: 74px;
+}
+.about_course .text-wrap p {
+  font-size: 1.25rem;
+}
+.about_course .get_course_btn {
+  margin-top: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data_items_wrap .data_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.data_items_wrap .data_item_value {
+  margin-bottom: 24px;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(196, 168, 193, 0.5);
+}
+.data_items_wrap .data_item_value .val {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4.8px;
+  color: #121212;
+}
+.data_items_wrap .data_item_value .unit {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 36px;
+  text-align: center;
+}
+.data_items_wrap .data_item_text p {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 36px;
+  text-align: center;
+}
+
+.course_program_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+.course_program_wrap .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.course_program_wrap .program_title {
+  margin-bottom: 21px;
+}
+.course_program_wrap .program_title h3 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.course_program_wrap .program-body {
+  max-width: 1024px;
+  width: 100%;
+}
+.course_program_wrap .program-body .program-body-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px;
+  position: relative;
+  min-height: 46px;
+}
+.course_program_wrap .program-body .program-body-item .text {
+  width: 45%;
+  margin-bottom: 0;
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  line-height: 27px;
+  color: black;
+  display: block;
+  height: 100%;
+}
+.course_program_wrap .program-body .program-body-item .text:nth-child(2n) {
+  text-align: left;
+}
+.course_program_wrap .program-body .program-body-item::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-color: #ac81c1;
+  left: 50%;
+  position: absolute;
+}
+.course_program_wrap .program-body .program-body-item::before {
+  content: '';
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: #ac81c1;
+  left: calc(50% - 6px);
+  top: calc(50% - 6px);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.course_features_wrap .feature-item {
+  margin-bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.course_features_wrap .feature-item .feature_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 46px;
+}
+.course_features_wrap .feature-item .feature_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 24px;
+}
+.course_features_wrap .feature-item .feature_text p {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  font-family: 'Montserrat', sans-serif;
+}
+.course_features_wrap .feature-item .feature_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 280px;
+}
+.course_features_wrap .feature-item .feature_img .img_wrap img {
+  border-radius: 50%;
+}
+.course_features_wrap .feature-item:nth-child(odd) .feature_img img {
+  height: 176px;
+  width: 176px;
+  -webkit-box-shadow: -16px 6px 0px 12px rgba(172, 129, 193, 0.8);
+          box-shadow: -16px 6px 0px 12px rgba(172, 129, 193, 0.8);
+}
+.course_features_wrap .feature-item:nth-child(even) .feature_img img {
+  height: 264px;
+  width: 264px;
+  -webkit-box-shadow: -14px 12px 0px 6px rgba(172, 129, 193, 0.3);
+          box-shadow: -14px 12px 0px 6px rgba(172, 129, 193, 0.3);
+}
+
 footer {
   padding: 64px 0;
 }
