@@ -887,6 +887,45 @@ section#main_about {
   }
 }
 
+.address_wrap{
+  margin-bottom: 46px;
+  p{
+    font-size: 24px;
+    letter-spacing: 3.36px;
+    line-height: 36px;
+  }
+}
+
+.viola_form {
+  .form-group{
+    label{
+      /* Style for "Ваше имя:" */
+      color: #000000;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 2.52px;
+    }
+    .form-control{
+      border-radius: 10px;
+      padding: 0.5rem 1.25rem;
+      border: 2px solid #806085;
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: 2.52px;
+      color: #000000;
+      &:focus,&:active{
+        outline: none;
+        box-shadow: none;
+      }
+
+    }
+  }
+}
+
+
+
 footer {
 
   padding: 64px 0;
