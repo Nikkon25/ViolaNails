@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a907dde-8632-4e7f-bfd4-28f9b5802742" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -86,11 +85,44 @@
       <workItem from="1571066608297" duration="2645000" />
       <workItem from="1571480535060" duration="596000" />
       <workItem from="1571559720463" duration="2371000" />
-      <workItem from="1585836193613" duration="269000" />
+      <workItem from="1585836193613" duration="1080000" />
     </task>
+    <task id="LOCAL-00001" summary="imges">
+      <created>1585836528513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585836528513</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="imges" />
+    <option name="LAST_COMMIT_MESSAGE" value="imges" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="138" key="CommitChangelistDialog2" timestamp="1585836527874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="453" y="138" key="CommitChangelistDialog2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1585836527874" />
+    <state x="318" y="185" key="SettingsEditor" timestamp="1585837226399">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="318" y="185" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1585837226399" />
   </component>
 </project>
